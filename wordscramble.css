@@ -1,0 +1,74 @@
+.title-head {
+  color: white;
+}
+
+body {
+  font-family: Arial;
+  background-color: black;
+}
+
+button {
+  margin-bottom: 15px;
+}
+
+.category {
+  color: green;
+}
+
+.theWord {
+  color: white;
+}
+
+.letter-scrambled {
+  color: blue;
+  background: black;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left: 5px;
+}
+
+.letter-unscrambled {
+  color: blue;
+  background: green;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left: 5px;
+}
+
+.correct-letter {
+  color: white;
+  background-color: green;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left:5px;
+}
+
+.incorrect-letter {
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left:5px;
+}
