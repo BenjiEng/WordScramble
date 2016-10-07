@@ -1,9 +1,12 @@
 .title-head {
   color: white;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin-bottom: 100px;
 }
 
 body {
-  font-family: Arial;
   background-color: black;
 }
 
@@ -13,23 +16,42 @@ button {
 
 .category {
   color: white;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
 }
 
-.theWord {
+#original {
   color: green;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+#scrambled-word {
+  text-align: center;
+}
+
+#word-field {
+  text-align: center;
+}
+
+#guess-field {
+  text-align: center;
 }
 
 .letter-scrambled {
   color: blue;
+  height: 60px;
+  width: 60px;
+  padding-left: 10px;
+  padding-right:10px;
   background: black;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   text-align: center;
   border: 1px solid blue;
-  padding-left: 10px;
-  padding-right:10px;
-  margin-left: 5px;
 }
 
 .letter-unscrambled {

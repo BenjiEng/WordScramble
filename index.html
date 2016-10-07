@@ -3,11 +3,19 @@
   <head>
     <title>WordScramble</title>
   </head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+  <link rel="stylesheet" href="wordscramble.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="wordscramble.js"></script>
 
   <body>
-    <link rel="stylesheet" href="wordscramble.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="wordscramble.js"></script>
 
     <h1 class="title-head">WordScramble</h1>
 
@@ -16,18 +24,21 @@
     </div>
     <p class="category">Scrambled Word:</p>
     <div id="scrambled-word"></div>
+
     <br>
+
     <p class="category">Correct Word So Far:</p>
-    <div class="word-field"></div>
+    <div id="word-field"></div>
+
     <br>
+
     <p class="category">Current Letter Guess:</p>
-    <div class="guess-field"></div>
+    <div id="guess-field"></div>
+
     <br>
+
     <button type="submit" id="get-word">Get word!</button>
-    <br>
     <button type="submit" id="give-up">I give up!</button>
-
-
 
   </body>
 
