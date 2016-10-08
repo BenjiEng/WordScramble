@@ -45,6 +45,7 @@ button {
 }
 
 .letter-scrambled {
+  font-family: 'Indie Flower', cursive;
   color: blue;
   height: 50px;
   width: 50px;
@@ -59,6 +60,7 @@ button {
 }
 
 .letter-unscrambled {
+  font-family: 'Indie Flower', cursive;
   color: blue;
   background: green;
   text-transform: uppercase;
@@ -72,6 +74,7 @@ button {
 }
 
 .correct-letter {
+  font-family: 'Indie Flower', cursive;
   color: white;
   background-color: green;
   border: 1px solid black;
@@ -86,6 +89,7 @@ button {
 }
 
 .incorrect-letter {
+  font-family: 'Indie Flower', cursive;
   color: white;
   background-color: red;
   border: 1px solid black;

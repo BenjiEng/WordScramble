@@ -88,7 +88,7 @@ $(function() {
         if (wordIdx === originalWord.length) {
           wordIdx = 0;
           debugger
-          alert("You got it! "+originalWord+". - " + definitionText);
+          alert("You got it! "+originalWord+" - " + definitionText);
         };
     }
   });
