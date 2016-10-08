@@ -3,7 +3,7 @@
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 body {
@@ -32,6 +32,7 @@ button {
 #scrambled-word {
   text-align: center;
   height: 60px;
+  margin-bottom: 5px;
 }
 
 #word-field {
