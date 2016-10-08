@@ -3,7 +3,7 @@
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 body {
@@ -25,25 +25,29 @@ button {
   color: green;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  font-size: 50px;
+  font-size: auto;
+  height: 100px;
 }
 
 #scrambled-word {
   text-align: center;
+  height: 60px;
 }
 
 #word-field {
   text-align: center;
+  height: 60px;
 }
 
 #guess-field {
   text-align: center;
+  height: 60px;
 }
 
 .letter-scrambled {
   color: blue;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   padding-left: 10px;
   padding-right:10px;
   background: black;
@@ -96,7 +100,7 @@ button {
 }
 
 .button-container {
-  margin-top: 200px;
+  margin-top: 60px;
   text-align: center;
 }
 #get-word {
