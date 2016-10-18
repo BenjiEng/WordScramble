@@ -3,7 +3,7 @@
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -12,6 +12,15 @@ body {
 
 button {
   margin-bottom: 15px;
+}
+.clock-holder {
+  margin-left: 39%;
+}
+#my-clock {
+  text-align: center !important;
+}
+#my-score {
+  text-align: center;
 }
 
 .category {
@@ -26,7 +35,7 @@ button {
   text-align: center;
   font-family: 'Indie Flower', cursive;
   font-size: auto;
-  height: 100px;
+  height: 90px;
 }
 
 #scrambled-word {
@@ -80,7 +89,7 @@ button {
   background-color: green;
   border: 1px solid black;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   text-align: center;
   border: 1px solid blue;
@@ -95,7 +104,7 @@ button {
   background-color: red;
   border: 1px solid black;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 800;
   text-align: center;
   border: 1px solid blue;
@@ -104,10 +113,22 @@ button {
   margin-left:5px;
 }
 
+/*modal*/
+#correct-word {
+  font-family: 'Indie Flower', cursive;
+  color: green;
+}
+
+#definition {
+  font-family: 'Indie Flower', cursive;
+  color: green;
+}
+
 .button-container {
-  margin-top: 60px;
+  margin-top: 10px;
   text-align: center;
 }
+
 #get-word {
   margin-right: 10px;
 }

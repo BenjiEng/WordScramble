@@ -1,5 +1,18 @@
 $(function() {
 
+  var clock;
+
+  clock = $('#my-clock').FlipClock(60, {
+        autoStart: false,
+        clockFace: 'MinuteCounter',
+        countdown: true,
+        callbacks: {
+          stop: function() {
+            $('.message').html('The clock has stopped!');
+          }
+        }
+  });
+
   $original = $('#original');
   $scrambledWord = $('#scrambled-word');
   keyDownListener = false;
@@ -37,6 +50,7 @@ $(function() {
         getDefinition(original);
         self.keyDownListener = true;
         $('#get-word').button('reset');
+        clock.start();
       }
     });
   };
@@ -87,8 +101,10 @@ $(function() {
 
         if (wordIdx === originalWord.length) {
           wordIdx = 0;
-          debugger
-          alert("You got it! "+originalWord+" - " + definitionText);
+          clock.stop();
+          $("#correct-word").html(originalWord);
+          $("#definition").html(definitionText);
+          $("#myModal").modal("show");
         };
     }
   });
