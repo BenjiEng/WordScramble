@@ -1,17 +1,21 @@
 $(function() {
 
   var clock;
+  var score = 0;
 
-  clock = $('#my-clock').FlipClock(60, {
-        autoStart: false,
-        clockFace: 'MinuteCounter',
-        countdown: true,
-        callbacks: {
-          stop: function() {
-            $('.message').html('The clock has stopped!');
+   initClock = function() {
+    clock = $('#my-clock').FlipClock(60, {
+          autoStart: false,
+          clockFace: 'MinuteCounter',
+          countdown: true,
+          callbacks: {
+            stop: function() {
+              alert('Times up thanks for playing! You got '+score+' word(s) correct!');
+              initClock();
+            }
           }
-        }
-  });
+    });
+  };
 
   $original = $('#original');
   $scrambledWord = $('#scrambled-word');
@@ -101,18 +105,23 @@ $(function() {
 
         if (wordIdx === originalWord.length) {
           wordIdx = 0;
-          clock.stop();
+          // clock.stop();
+          $("#game-status").html("You got it! The word was: ");
           $("#correct-word").html(originalWord);
           $("#definition").html(definitionText);
           $("#myModal").modal("show");
+          score += 1;
         };
     }
   });
 
   //give up listener
   $("#give-up").on('click', function() {
+    $("#game-status").html("You didn't get it :( The word was: ");
+    $("#correct-word").html(originalWord);
+    $("#definition").html(definitionText);
+    $("#myModal").modal("show");
     keyDownListener = false;
-    $('#original').html('<h3 class="theWord">'+originalWord+'</h3> <p>- '+definitionText+'</p>');
   });
 
 
