@@ -4,7 +4,7 @@ $(function() {
   var score = 0;
 
    initClock = function() {
-    clock = $('#my-clock').FlipClock(60, {
+    clock = $('#my-clock').FlipClock(90, {
           autoStart: false,
           clockFace: 'MinuteCounter',
           countdown: true,
@@ -36,9 +36,10 @@ $(function() {
   //finds a word
   function findWord() {
     var self = this;
+    debugger
     $.ajax({
       type: "GET",
-      url: "http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&excludePartOfSpeech=pronoun&minCorpusCount=1&maxCorpusCount=-1&minDictionaryCount=2&maxDictionaryCount=-1&minLength=5&maxLength=12&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5",
+      url: "http://api.wordnik.com:80/v4/words.json/randomWord?hasDictionaryDef=true&includePartOfSpeech=noun&excludePartOfSpeech=pronoun&minCorpusCount=1&maxCorpusCount=-1&minDictionaryCount=2&maxDictionaryCount=-1&minLength=5&maxLength=12&api_key=dhuq34cwhqpb592fs8lyz64ujcwf3jzf8f74mbnroedvlk1pl",
       success: function(word) {
         var original = (word.word).toLowerCase();
         originalWord = original
@@ -55,6 +56,9 @@ $(function() {
         self.keyDownListener = true;
         $('#get-word').button('reset');
         clock.start();
+      },
+      error: function(e) {
+        console.log(e);
       }
     });
   };
